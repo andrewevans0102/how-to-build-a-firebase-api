@@ -1,0 +1,81 @@
+.frontend-row {
+  margin: 2em;
+  border: solid;
+  padding: 2em;
+}
+
+.read-all {
+  width: 100%;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  display: flex;
+  justify-content: left;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-output {
+  color: blue;
+}
+
+.select-all {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2em;
+}
+
+.select-all > button {
+  width: 20em;
+}
+
+.example-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+ul {
+  margin: 1em;
+}
+
+span {
+  margin: 1em;
+}
+
+.id-column {
+  width: 10em;
+}

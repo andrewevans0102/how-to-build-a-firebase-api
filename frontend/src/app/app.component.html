@@ -1,0 +1,40 @@
+<div class="jumbotron">
+  <h1 class="display-4">Firebase API</h1>
+  <p class="lead">This is a simple frontend application that consumes the API built <a href="https://github.com/andrewevans0102/how-to-build-a-firebase-api">with this GitHub project</a>.  Open up the console with "inspect" to see the output of the different functions in action.</p>
+</div>
+<div class="container">
+  <div class="row frontend-row">
+    <div class="col">
+      <form>
+        <div class="form-group example-list">
+          <div class="select-all">
+            <button class="btn btn-btn btn-primary" (click)="selectAll()">select all</button>
+            <button class="btn btn-btn btn-success" (click)="createItem()">create item</button>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="id-column">id</th>
+                <th scope="col">item</th>
+                <th scope="col">update</th>
+                <th scope="col">delete</th>
+                <th scope="col">save</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let item of exampleItems">
+              <tr>
+                <!--https://angular.io/guide/template-syntax#ngModel-->
+                <td class="id-column"><input placeholder="id" [value]="item.id" (input)="item.id=$event.target.value"></td>
+                <td><input placeholder="item" [value]="item.item" (input)="item.item=$event.target.value"></td>
+                <td><button type="button" class="btn btn-warning" (click)="updateItem(item)">update</button></td>
+                <td><button type="button" class="btn btn-danger" (click)="deleteItem(item)">delete</button></td>
+                <td><button type="button" class="btn btn-success" (click)="saveItem(item)" *ngIf="item.save !== undefined">save</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
