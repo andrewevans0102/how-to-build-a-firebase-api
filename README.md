@@ -1,6 +1,6 @@
 # how-to-build-a-firebase-api
 
-This repo accompanies my blog post on rhythmandbinary.com here.
+This repo accompanies my blog post on [rhythmandbinary.com here](https://rhythmandbinary.com/2019/07/24/building-an-api-with-firebase/)
 
 The `functions` folder holds the backend API endpoints.
 
