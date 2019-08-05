@@ -71,3 +71,6 @@ typings/
 
 # frontend package-lock.json
 /frontend/package-lock.json
+
+# vscode
+.vscode/

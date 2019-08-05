@@ -12,10 +12,6 @@ admin.initializeApp({
 });
 const db = admin.firestore();
 
-app.get('/hello-world', (req, res) => {
-  return res.status(200).send('Hello World!');
-});
-
 // create
 app.post('/api/create', (req, res) => {
     (async () => {

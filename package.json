@@ -1,0 +1,27 @@
+{
+  "name": "how-to-build-a-firebase-api",
+  "version": "1.0.0",
+  "description": "project that shows an example API built with Firebase and includes a frontend application",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start-frontend": "cd frontend; ng serve",
+    "api-serve": "cd functions; npm run serve",
+    "api-deploy": "cd functions; npm run deploy",
+    "firebase-install": "npm install -g firebase-tools",
+    "firebase-init": "firebase init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewevans0102/how-to-build-a-firebase-api.git"
+  },
+  "author": "Andrew Evans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewevans0102/how-to-build-a-firebase-api/issues"
+  },
+  "homepage": "https://github.com/andrewevans0102/how-to-build-a-firebase-api#readme"
+}
