@@ -74,3 +74,9 @@ typings/
 
 # vscode
 .vscode/
+
+# firebaserc
+.firebaserc
+
+# firebase json
+firebase.json
