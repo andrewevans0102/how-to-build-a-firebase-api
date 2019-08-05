@@ -9,21 +9,6 @@
 			"name": "localhost",
 			"item": [
 				{
-					"name": "hello-world localhost",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": ""
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "create localhost",
 					"request": {
 						"method": "POST",
@@ -37,17 +22,17 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"id\": \"1\",\n\t\"item\": \"first item\"\n}"
+							"raw": "{\n\t\"id\": \"2\",\n\t\"item\": \"second item\"\n}"
 						},
 						"url": {
-							"raw": "http://localhost:5000/fir-api-9a206/us-central1/app/api/create",
+							"raw": "http://localhost:5000/{{project-id}}/us-central1/app/api/create",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "5000",
 							"path": [
-								"fir-api-9a206",
+								"{{project-id}}",
 								"us-central1",
 								"app",
 								"api",
@@ -67,19 +52,19 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:5000/fir-api-9a206/us-central1/app/api/read/ySFqcCRWg7c6NgtHPALp",
+							"raw": "http://localhost:5000/{{project-id}}/us-central1/app/api/read/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "5000",
 							"path": [
-								"fir-api-9a206",
+								"{{project-id}}",
 								"us-central1",
 								"app",
 								"api",
 								"read",
-								"ySFqcCRWg7c6NgtHPALp"
+								"2"
 							]
 						}
 					},
@@ -95,14 +80,14 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:5000/fir-api-9a206/us-central1/app/api/read",
+							"raw": "http://localhost:5000/{{project-id}}/us-central1/app/api/read",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "5000",
 							"path": [
-								"fir-api-9a206",
+								"{{project-id}}",
 								"us-central1",
 								"app",
 								"api",
@@ -129,19 +114,19 @@
 							"raw": "{\n\t\"item\": \"this item has been updated\"\n}"
 						},
 						"url": {
-							"raw": "http://localhost:5000/fir-api-9a206/us-central1/app/api/update/ySFqcCRWg7c6NgtHPALp",
+							"raw": "http://localhost:5000/{{project-id}}/us-central1/app/api/update/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "5000",
 							"path": [
-								"fir-api-9a206",
+								"{{project-id}}",
 								"us-central1",
 								"app",
 								"api",
 								"update",
-								"ySFqcCRWg7c6NgtHPALp"
+								"1"
 							]
 						}
 					},
@@ -157,14 +142,14 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:5000/fir-api-9a206/us-central1/app/api/delete/ySFqcCRWg7c6NgtHPALp",
+							"raw": "http://localhost:5000/{{project-id}}/us-central1/app/api/delete/ySFqcCRWg7c6NgtHPALp",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "5000",
 							"path": [
-								"fir-api-9a206",
+								"{{project-id}}",
 								"us-central1",
 								"app",
 								"api",
@@ -180,31 +165,6 @@
 		{
 			"name": "deployed",
 			"item": [
-				{
-					"name": "hello-world deployed",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://us-central1-fir-api-9a206.cloudfunctions.net/app/hello-world",
-							"protocol": "https",
-							"host": [
-								"us-central1-fir-api-9a206",
-								"cloudfunctions",
-								"net"
-							],
-							"path": [
-								"app",
-								"hello-world"
-							]
-						}
-					},
-					"response": []
-				},
 				{
 					"name": "create deployed",
 					"request": {
@@ -222,10 +182,10 @@
 							"raw": "{\n\t\"id\": \"1\",\n\t\"item\": \"second item that is deployed\"\n}"
 						},
 						"url": {
-							"raw": "https://us-central1-fir-api-9a206.cloudfunctions.net/app/api/create",
+							"raw": "https://us-central1-{{project-id}}.cloudfunctions.net/app/api/create",
 							"protocol": "https",
 							"host": [
-								"us-central1-fir-api-9a206",
+								"us-central1-{{project-id}}",
 								"cloudfunctions",
 								"net"
 							],
@@ -248,10 +208,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://us-central1-fir-api-9a206.cloudfunctions.net/app/api/read/3u61WIaABzCpjNp7ir1u",
+							"raw": "https://us-central1-{{project-id}}.cloudfunctions.net/app/api/read/3u61WIaABzCpjNp7ir1u",
 							"protocol": "https",
 							"host": [
-								"us-central1-fir-api-9a206",
+								"us-central1-{{project-id}}",
 								"cloudfunctions",
 								"net"
 							],
@@ -275,10 +235,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://us-central1-fir-api-9a206.cloudfunctions.net/app/api/read",
+							"raw": "https://us-central1-{{project-id}}.cloudfunctions.net/app/api/read",
 							"protocol": "https",
 							"host": [
-								"us-central1-fir-api-9a206",
+								"us-central1-{{project-id}}",
 								"cloudfunctions",
 								"net"
 							],
@@ -308,10 +268,10 @@
 							"raw": "{\n\t\"item\": \"this item has been updated\"\n}"
 						},
 						"url": {
-							"raw": "https://us-central1-fir-api-9a206.cloudfunctions.net/app/api/update/6AhLZYP5VqEXMp2xxS8Y",
+							"raw": "https://us-central1-{{project-id}}.cloudfunctions.net/app/api/update/6AhLZYP5VqEXMp2xxS8Y",
 							"protocol": "https",
 							"host": [
-								"us-central1-fir-api-9a206",
+								"us-central1-{{project-id}}",
 								"cloudfunctions",
 								"net"
 							],
@@ -335,10 +295,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://us-central1-fir-api-9a206.cloudfunctions.net/app/api/delete/6AhLZYP5VqEXMp2xxS8Y",
+							"raw": "https://us-central1-{{project-id}}.cloudfunctions.net/app/api/delete/6AhLZYP5VqEXMp2xxS8Y",
 							"protocol": "https",
 							"host": [
-								"us-central1-fir-api-9a206",
+								"us-central1-{{project-id}}",
 								"cloudfunctions",
 								"net"
 							],
