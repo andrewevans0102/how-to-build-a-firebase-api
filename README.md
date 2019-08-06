@@ -10,6 +10,8 @@ The `functions` folder holds the backend API endpoints.
 
 The `frontend` folder holds a basic Angular frontend application that consumes the API endpoints.
 
+The `presentation` folder holds a copy of the presentation that I did for the Capital One Summit Course in August 2019.
+
 The `postman` folder holds a postman collection that has example calls that you can run.  
 - Folder `localhost` are calls when running the functions locally
 - Folder `deployed` are calls when running the functions deployed.
