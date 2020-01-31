@@ -1,6 +1,6 @@
 # how-to-build-a-firebase-api
 
-This repo accompanies my blog post on __Angular-In-Depth__ [Buliding an API with Firebase](https://blog.angularindepth.com/building-an-api-with-firebase-6108a207c1fd).
+This repo accompanies my blog post on [Buliding an API with Firebase](https://medium.com/@andrew_evans/building-an-api-with-firebase-6ec9623eae3).
 
 In order to create an app with Firebase please access the [Firebase Console](https://console.firebase.google.com/).
 
